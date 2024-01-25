@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.thumbnail-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    left: 50%; /* Set left to 50% of the parent element */
+    transform: translateX(-50%); /* Shift the element left by 50% of its own width */
+    overflow: scroll;
+    margin-top: 1rem;
+}
+
+.thumbnail-image {
+    height: 100px;
+    width: auto;
+}
+
+.display-image {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
