@@ -11,11 +11,12 @@ body {
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 30%;
     left: 50%; /* Set left to 50% of the parent element */
     transform: translateX(-50%); /* Shift the element left by 50% of its own width */
-    overflow: scroll;
+    overflow-x: scroll;
     margin-top: 1rem;
+    border-radius: 4px;
 }
 
 .thumbnail-image {
@@ -32,4 +33,33 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/* style the next and previous buttons */
+button {
+    border: 1px solid rgba(181, 178, 178, 0.474);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.135);
+    color:  rgba(181, 178, 178, 0.474);;
+    padding: 6px 10px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+button#next {
+    position: absolute;
+    top: 50vh;
+    right: 5vw;
+}
+
+button#prev{
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+}
+ /* add media queries to make the thumbnail move to the bottom of the screen for mobile users */
+@media (max-width: 600px) {
+    .thumbnail-container { 
+        bottom: 5px;
+    }
 }
