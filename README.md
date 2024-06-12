@@ -1,4 +1,4 @@
-# Assignment 3 (Wk 3) - Build a full screen, accesbile Gallery webiste 
+# Assignment 2 (Wk 2) - Building an accessible image gallery
 User stories:
 - 🐿️ I want to browse a set of thumbnail images that load quickly
 - 🐿️ I want to select a thumbnail and display a larger version of the image, with a description
